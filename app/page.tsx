@@ -24,7 +24,7 @@ export default async function Home() {
           {/* Text Content */}
           <div className="space-y-6">
             <span className="inline-block rounded-full bg-black/5 px-4 py-1 text-sm font-medium text-neutral-700">
-              New Collection 2026
+              New Collection {new Date().getFullYear()}
             </span>
 
             <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl md:text-6xl">
