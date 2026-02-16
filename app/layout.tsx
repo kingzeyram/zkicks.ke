@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex min-h-full flex-col bg-white">
         <Navbar />
-        <main className="flex-grow container mx-auto px-4 py-8">
+        <main className="flex-grow container mx-auto pt-[80px] md:pt-[90px] lg:pt-[100px]">
           {children}
         </main>
         <Footer />

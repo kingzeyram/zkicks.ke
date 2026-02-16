@@ -7,7 +7,7 @@ import { checkoutAction } from "./checkout-action";
 import { clear } from "console";
 
 export default function CheckoutPage() {
-  const { items, removeItem, addItem,clearCart } = useCartStore();
+  const { items, removeItem, addItem, clearCart } = useCartStore();
   const total = items.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0
@@ -22,7 +22,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto pt-10 px-4 py-8">
       <h1 className="text-3xl font-bold mb-8 text-center">Checkout</h1>
       <Card className="max-w-md mx-auto mb-8">
         <CardHeader>
@@ -65,16 +65,16 @@ export default function CheckoutPage() {
       </Card>
       <form action={checkoutAction} className="max-w-md mx-auto">
         <input type="hidden" name="items" value={JSON.stringify(items)} />
-        <Button onClick={() => clearCart() } variant="default" className="w-full">
-         clear cart
+        <Button onClick={() => clearCart()} variant="default" className="w-full">
+          clear cart
         </Button>
         <br />
         <br />
         <Button type="submit" variant="default" className="w-full">
           Proceed to Payment
         </Button>
-        
-        
+
+
       </form>
     </div>
   );
