@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image"
 import Link from "next/link";
 import { ShoppingCartIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useCartStore } from "@/store/cart-store";
@@ -52,9 +53,23 @@ export function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-xl font-bold tracking-tight transition-colors hover:text-blue-600"
+            className="flex items-center gap-2 group"
           >
-            ZKICKS<span className="text-blue-600">.</span>KE
+            <Image
+              src="/logo.svg"
+              alt="ZKICKS Logo"
+              width={36}
+              height={36}
+              className={cn(
+                "object-contain transition-all duration-300",
+                scrolled ? "h-8 w-8" : "h-9 w-9"
+              )}
+              priority
+            />
+
+            <span className="text-xl font-bold tracking-tight transition-colors group-hover:text-blue-600">
+              ZKICKS<span className="text-blue-600">.</span>KE
+            </span>
           </Link>
 
           {/* Desktop nav */}
