@@ -45,7 +45,7 @@ export default async function AboutPage() {
                     <div>
                         <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                         <p className="text-gray-600 mb-4 leading-relaxed">
-                            Founded in 20XX, ZKicks started with one goal — to make premium
+                            Founded in 2026, ZKicks started with one goal — to make premium
                             footwear accessible without compromising on quality. What began
                             as a small sneaker passion project quickly grew into a trusted
                             destination for trendsetters and comfort lovers alike.
