@@ -54,7 +54,7 @@ export const Carousel = ({ products }: Props) => {
 
         {price?.unit_amount && (
           <p className="text-xl text-white">
-            ${(price.unit_amount / 100).toFixed(2)}
+            KES {(price.unit_amount / 100).toFixed(2)}
           </p>
         )}
       </CardContent>
